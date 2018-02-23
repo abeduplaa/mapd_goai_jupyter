@@ -2,6 +2,7 @@
 
 FROM nvidia/cuda:8.0-devel-ubuntu14.04
 MAINTAINER ABRAHAM_DUPLAA
+
 # Configure environment
 ARG CONDA_VER="4.3.21"
 ARG NUMBA_VERSION="0.34"
