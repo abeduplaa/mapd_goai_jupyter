@@ -94,6 +94,7 @@ RUN git clone https://github.com/gpuopenanalytics/libgdf.git && cd libgdf && git
     conda clean -iltpsy "
 
 # Add pymapd 
+ARG PYMAPD_COMMIT="6ee48ee"
 RUN git clone https://github.com/mapd/pymapd.git && cd pymapd && git checkout $PYMAPD_COMMIT && \
     /bin/bash -c "source activate pycudf_notebook_py35 && \
     conda install -y pyarrow arrow-cpp setuptools_scm cython && \
